@@ -13,6 +13,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import { RolesReadComponent } from './components/views/roles/roles-read/roles-read.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    RolesReadComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
