@@ -18,9 +18,11 @@ import {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from '@angular/material/button';
 import { ChampionsReadAllComponent } from './components/views/champions/champions-read-all/champions-read-all.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ChampionCreateComponent } from './components/views/champions/champion-create/champion-create.component';
+import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     NavComponent,
     HomeComponent,
     RolesReadComponent,
-    ChampionsReadAllComponent
+    ChampionsReadAllComponent,
+    ChampionCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatButtonModule,
     FormsModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
