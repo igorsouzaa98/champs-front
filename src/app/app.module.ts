@@ -15,6 +15,8 @@ import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { RolesReadComponent } from './components/views/roles/roles-read/roles-read.component';
 import {MatTableModule} from '@angular/material/table';
+import {HttpClientModule} from "@angular/common/http";
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import {MatTableModule} from '@angular/material/table';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
