@@ -17,6 +17,10 @@ import { RolesReadComponent } from './components/views/roles/roles-read/roles-re
 import {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from "@angular/common/http";
 import {MatButtonModule} from '@angular/material/button';
+import { ChampionsReadAllComponent } from './components/views/champions/champions-read-all/champions-read-all.component';
+import {FormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -26,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    RolesReadComponent
+    RolesReadComponent,
+    ChampionsReadAllComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatTableModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
