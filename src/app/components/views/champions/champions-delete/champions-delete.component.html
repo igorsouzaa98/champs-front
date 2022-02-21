@@ -1,0 +1,28 @@
+<form>
+    <h1>
+        Deletando Campeão
+    </h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="champions.nome"  type="text" name="nome" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Damage</mat-label>
+        <input matInput [(ngModel)]="champions.damage"  type="text" name="damage" disabled>
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Tier</mat-label>
+        <input matInput [(ngModel)]="champions.tier"  type="text" name="tier" disabled >
+
+    </mat-form-field>
+
+    <div class="buttons">
+        <button class="mat-elevation-z8" (click)="delete()">Deletar</button>
+        <button class="mat-elevation-z8" (click)="cancel()">Cancelar</button>
+    </div>
+</form>
+

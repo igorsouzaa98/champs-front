@@ -1,0 +1,28 @@
+<form action="">
+    <h1>
+        Adicionando Campeão
+    </h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="champions.nome" [formControl]="nome" required type="text" name="nome" placeholder="Nome do Campeão">
+        <mat-error *ngIf="nome.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Damage</mat-label>
+        <input matInput [(ngModel)]="champions.damage" [formControl]="damage" required type="text" name="damage" placeholder="Tipo de dano do campeão">
+        <mat-error *ngIf="damage.invalid">{{ getMessage2() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Tier</mat-label>
+        <input matInput [(ngModel)]="champions.tier" [formControl]="tier" required type="text" name="tier" placeholder="tier do campeão" maxlength="3">
+        <mat-error *ngIf="tier.invalid">{{ getMessage3() }}</mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button [disabled]="getMessage()" (click)="create()" class="mat-elevation-z8">Criar</button>
+        <button class="mat-elevation-z8" (click)="cancel()">Cancelar</button>
+    </div>
+</form>

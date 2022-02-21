@@ -1,0 +1,12 @@
+.container{
+    height: 85%;
+}
+.menu{
+    background-color: #fafafa;
+}
+.lista a{
+    color: black;
+}
+.icon{
+    padding-right: .6rem;
+}

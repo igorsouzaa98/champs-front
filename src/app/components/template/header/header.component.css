@@ -1,0 +1,21 @@
+img{
+    height: 3rem;
+}
+
+.header{
+    justify-content: center;
+    height: 10%;
+    background-color: #EEE6E9;
+    color: black;
+    flex-direction: column;
+    padding: 2rem;
+}
+spam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+ font-size: 1.5rem;
+}
