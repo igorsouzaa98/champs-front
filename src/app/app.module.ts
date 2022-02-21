@@ -22,7 +22,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ChampionCreateComponent } from './components/views/champions/champion-create/champion-create.component';
-import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { ChampionsUpdateComponent } from './components/views/champions/champions-update/champions-update.component';
+import { ChampionsDeleteComponent } from './components/views/champions/champions-delete/champions-delete.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
     HomeComponent,
     RolesReadComponent,
     ChampionsReadAllComponent,
-    ChampionCreateComponent
+    ChampionCreateComponent,
+    ChampionsUpdateComponent,
+    ChampionsDeleteComponent
   ],
   imports: [
     BrowserModule,
